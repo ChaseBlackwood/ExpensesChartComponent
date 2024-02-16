@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  </style>
+</head>
+<body style="font-family: DM Sans, sans-serif">
+ 
+  <div id="container" class="container">
+    <div id="header" class="header">
+      <div id="myBalance" class="myBalance">
+        <h1>My balance</h1>
+        <h2>$921.48</h2>
+      </div>
+      <div id="logo" class="logo"> 
+        <img src="images\logo.svg">
+      </div>
+    </div>
+
+    <div id="mySpending" class="mySpending">
+      <h3>Spending - Last 7 Days</h3>
+      <div class="myChartContainer">
+        <canvas id="myChart" width="303" height="177"></canvas>
+      </div>
+      <div class="total">
+        <div class="monthlyTotal"> 
+          <h4>Total this month</h4>
+          <h5>$478.33</h5>
+        </div>
+        <div class="percentChange">
+          <h6>+2.4%</h6>
+          <p>from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Chase Blackwood</a>.
+  </div>
+  <script src="index.js">
+  </script>
+</body>
+</html>
